@@ -28,18 +28,18 @@ const PORT = process.env.PORT || 3001;
 //   console.log(data);
 // });
 
-let bookOne = new Book ({
-  title: 'Watership Down',
-  description: 'An adventure novel about a group of rabbits seeking a new home.',
-  status: 'Finished'
-});
+// let bookOne = new Book ({
+//   title: 'Watership Down',
+//   description: 'An adventure novel about a group of rabbits seeking a new home.',
+//   status: 'Finished'
+// });
 
-bookOne.save()
-  .then(() => {
-    Book.find().then(data => {
-      console.log(data);
-    });
-  });
+// bookOne.save()
+//   .then(() => {
+//     Book.find().then(data => {
+//       console.log(data);
+//     });
+//   });
 
 app.get('/books', (request, response) => {
   let {title, description, status} = request.query;
