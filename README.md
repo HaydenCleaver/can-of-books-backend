@@ -2,7 +2,7 @@
 
 **Author**: AJ Harris, Hayden Cleaver
 <br>
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.1.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 
@@ -10,12 +10,22 @@ Application that tracks books that are significant to the user and recommends ne
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
+
+1. Create repo and clone down starter files from template, or create fresh repo and create basic server file.
+2. Install express, cors, dotenv, and mongoose via `npm install` in terminal.
+3. Create `.gitignore` and `.env` files and ensure `.env` is included in `.gitignore`.
+4. Link Heroku to Github repo.
+5. Add Atlas URL to `.env` file and use it in `mongoose.connect(URL)`; then add Atlas URL to heroku config vars.
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
+
+Node, Express, Mongoose, Cors, Dotenv
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
+
+07-25-2022 10:15pm - Mongoose has been initialized and Seed data saved. Server also takes in queries based on title, description, or status of books and returns any relevant data.
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
@@ -24,6 +34,11 @@ Application that tracks books that are significant to the user and recommends ne
 <!-- See below -->
 
 ## Credit and Collaborations
+
+[MongoDB Atlas Database](https://www.mongodb.com/atlas/database)
+<br>
+[Heroku Cloud Application](https://www.heroku.com/)
+<br>
 
 ## Feature 1: Repo and Cloud Setup
 
