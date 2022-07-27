@@ -26,6 +26,8 @@ Node, Express, Mongoose, Cors, Dotenv
 ## Change Log
 
 07-25-2022 10:15pm - Mongoose has been initialized and Seed data saved. Server also takes in queries based on title, description, or status of books and returns any relevant data.
+
+07-26-2022 8:00pm - Route to allow addition of new book objects has been completed.
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
@@ -60,15 +62,26 @@ Finish time: 10:15pm
 
 Actual time needed to complete: 1 hr 5 min
 
-## Feature 3: 
+## Feature 3: Add New Book Functionality
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2 hr
 
-Start time: _____
+Start time: 6:00pm
 
-Finish time: _____
+Finish time: 8:00pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 2 hr
+
+## Feature 4: Remove Book Functionality
+
+Estimate of time needed to complete: 2 hr
+
+Start time: 9:00pm
+
+Finish time: 9:50pm
+
+Actual time needed to complete: 50 min
+
 
 ## Team Agreement
 
