@@ -4,7 +4,10 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const Book = require('./Book.js');
+
+const postBooks = require('./modules/postBooks.js');
+const getBooks = require('./modules/getBooks.js');
+const deleteBooks = require('./modules/deleteBooks.js');
 
 const app = express();
 app.use(cors());
@@ -14,51 +17,17 @@ mongoose.connect(process.env.DATABASE_URL);
 
 const PORT = process.env.PORT || 3001;
 
-// const title = process.argv[2];
-// const description = process.argv[3];
-// const status = process.argv[4];
 
-// let book = new Book ({
-//   title,
-//   description,
-//   status,
-// });
+app.use(express.json());
 
-// book.save().then(data => {
-//   console.log(data);
-// });
+app.post('/books', postBooks);
 
-// let bookOne = new Book ({
-//   title: 'Watership Down',
-//   description: 'An adventure novel about a group of rabbits seeking a new home.',
-//   status: 'Finished'
-// });
+app.get('/books', getBooks);
 
-// bookOne.save()
-//   .then(() => {
-//     Book.find().then(data => {
-//       console.log(data);
-//     });
-//   });
+app.delete('/books/:id', deleteBooks);
 
-app.get('/books', (request, response) => {
-  let {title, description, status} = request.query;
-  let queryObject = {};
-
-  if (title){
-    queryObject.title = title;
-  }
-  if (description){
-    queryObject.description = description;
-  }
-  if (status){
-    queryObject.status = status;
-  }
-
-  Book.find(queryObject)
-    .then(bookData => {
-      response.send(bookData);
-    });
+app.use ((error, request, response, next) =>{
+  response.status(500).send(error);
 });
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
