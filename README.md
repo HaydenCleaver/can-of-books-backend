@@ -2,7 +2,7 @@
 
 **Author**: AJ Harris, Hayden Cleaver
 <br>
-**Version**: 1.1.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.3.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 
@@ -28,6 +28,8 @@ Node, Express, Mongoose, Cors, Dotenv
 07-25-2022 10:15pm - Mongoose has been initialized and Seed data saved. Server also takes in queries based on title, description, or status of books and returns any relevant data.
 
 07-26-2022 8:00pm - Route to allow addition of new book objects has been completed.
+
+07-27-2022 8:00pm - New route that allows users to update books within the database.
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
@@ -81,6 +83,16 @@ Start time: 9:00pm
 Finish time: 9:50pm
 
 Actual time needed to complete: 50 min
+
+## Feature 5: Update Book Functionality
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 7:00pm
+
+Finish time: 8:00pm
+
+Actual time needed to complete: 1 hr
 
 
 ## Team Agreement
